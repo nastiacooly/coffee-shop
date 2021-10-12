@@ -1,0 +1,12 @@
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 355px;
+    height: 40px;
+    list-style-type: none;
+    position: absolute;
+    top: 30px;
+    left: 140px;
+}

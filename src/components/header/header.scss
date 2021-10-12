@@ -1,0 +1,11 @@
+.header {
+    background: no-repeat center/100% url('./header_bg.png');
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    padding: 130px;
+
+    &__title {
+        color: white;
+    }
+}
