@@ -1,0 +1,25 @@
+.main-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 25px;
+    width: 350px;
+    align-items: center;
+
+    &__title {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    &__content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

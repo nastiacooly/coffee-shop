@@ -1,11 +1,13 @@
+import Divider from '../divider/divider';
+
 import './main-info.scss';
 
 const MainInfo = () => {
     return (
         <div className="main-info">
             <h2 className="main-info__title">About our beans</h2>
-            <hr></hr>
-            <div>
+            <Divider image/>
+            <div className="main-info__content">
                 <p>
                     Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
                 </p>

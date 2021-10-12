@@ -1,0 +1,14 @@
+.divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+
+    &__line {
+        width: 60px;
+        height: 1px;
+        background-color: black;
+    }
+}

@@ -2,6 +2,14 @@
     position: relative;
 
     &-container {
-        padding: 30px 310px 20px;
+        padding: 70px 310px 20px;
+        display: flex;
+        justify-content: center;
     }
+}
+
+.main-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
 }
