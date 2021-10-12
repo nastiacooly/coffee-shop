@@ -1,14 +1,31 @@
 .divider {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     width: 200px;
     height: 30px;
+
+    &_justify {
+        &_space-between {
+            justify-content: space-between;
+        }
+        &_center {
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+    &_margined {
+        margin: 60px 0;
+    }
 
     &__line {
         width: 60px;
         height: 1px;
         background-color: black;
+
+        &_wide {
+            width: 240px;
+        }
     }
 }

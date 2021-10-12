@@ -1,0 +1,26 @@
+.coffee-card {
+    width: 220px;
+    height: 260px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    padding: 35px 25px;
+    text-align: right;
+    &:hover {
+        cursor: url('./сursor.png'), auto;	
+    }
+
+    &__img {
+        width: 165px;
+        height: 115px;
+        object-fit: contain;
+    }
+
+    &__title, &__origin {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 14px;
+    }
+
+    &__price {
+        font-weight: bold;
+    }
+}

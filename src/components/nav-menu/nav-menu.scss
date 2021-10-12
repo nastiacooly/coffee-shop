@@ -6,7 +6,15 @@
     width: 355px;
     height: 40px;
     list-style-type: none;
-    position: absolute;
-    top: 30px;
-    left: 140px;
+
+    &_position {
+        &_top-left {
+            position: absolute;
+            top: 30px;
+            left: 140px;
+        }
+        &_center {
+            margin: 0 auto;
+        }
+    }
 }

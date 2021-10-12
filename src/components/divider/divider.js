@@ -4,15 +4,21 @@ import './divider.scss';
 
 const Divider = (props) => {
     let image = null;
+    
     if (props.image) {
         image = <img src={coffeeBeans} alt="coffee-beans" />;
+        return (
+            <div className="divider divider_justify_space-between">
+                <div className="divider__line"></div>
+                {image}
+                <div className="divider__line"></div>
+            </div>
+        );
     }
 
     return (
-        <div className="divider">
-            <div className="divider__line"></div>
-            {image}
-            <div className="divider__line"></div>
+        <div className="divider divider_justify_center divider_margined">
+            <div className="divider__line divider__line_wide"></div>
         </div>
     );
 }

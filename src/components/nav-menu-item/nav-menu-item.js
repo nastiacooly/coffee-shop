@@ -9,7 +9,7 @@ const NavMenuItem = (props) => {
     return (
         <li className={className}>
             {/* eslint-disable-next-line*/}
-            <a href="#" className="nav-menu__link nav-menu__link_white">{props.content}</a>
+            <a href="#" className="nav-menu__link">{props.content}</a>
         </li>
     )
 }

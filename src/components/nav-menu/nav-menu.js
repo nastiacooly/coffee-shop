@@ -2,7 +2,7 @@ import NavMenuItem from '../nav-menu-item/nav-menu-item';
 
 import './nav-menu.scss';
 
-const NavMenu = () => {
+const NavMenu = (props) => {
     const itemsContents = ['Coffee House', 'Our Coffee', 'For Your Pleasure'];
 
     const items = itemsContents.map(content => {
@@ -11,10 +11,18 @@ const NavMenu = () => {
         }
         return <NavMenuItem content={content}/>;
     })
+
+    let className = "nav-menu";
+    if (props.position === "top-left") {
+        className += ' nav-menu_position_top-left'
+    }
+    if (props.position === "center") {
+        className += ' nav-menu_position_center'
+    }
     
     return (
         <nav>
-            <ul className="nav-menu">
+            <ul className={className}>
                 {items}
             </ul>
         </nav>
