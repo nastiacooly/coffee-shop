@@ -4,8 +4,10 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
     padding: 35px 25px;
     text-align: right;
+    transition: 1s all;
     &:hover {
-        cursor: url('./сursor.png'), auto;	
+        cursor: url('./сursor.png'), auto;
+        transform: scale(1.1);
     }
 
     &__img {

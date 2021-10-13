@@ -5,11 +5,11 @@ import './nav-menu.scss';
 const NavMenu = (props) => {
     const itemsContents = ['Coffee House', 'Our Coffee', 'For Your Pleasure'];
 
-    const items = itemsContents.map(content => {
+    const items = itemsContents.map((content, i) => {
         if (content === "Coffee House") {
-            return <NavMenuItem content={content} logo/>;
+            return <NavMenuItem content={content} key={i} logo/>;
         }
-        return <NavMenuItem content={content}/>;
+        return <NavMenuItem content={content} key={i}/>;
     })
 
     let className = "nav-menu";

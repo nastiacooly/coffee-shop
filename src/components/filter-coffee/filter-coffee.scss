@@ -19,5 +19,8 @@
         &:hover {
             cursor: pointer;
         }
+        &_active {
+            border: 1px solid black;
+        }
     }
 }
