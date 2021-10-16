@@ -1,3 +1,16 @@
+@mixin coffee-beans-logo {
+    &:before {
+        display: inline-block;
+        content: '';
+        background-image: url('./coffee-beans.svg');
+        background-size: 35px 35px;
+        height: 35px;
+        width: 35px;
+        margin: 0;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+
 .nav-menu__item {
     font-size: 12px;
     line-height: 17px;
@@ -6,16 +19,7 @@
     position: relative;
 
     &_logo {
-        &:before {
-            display: inline-block;
-            content: '';
-            background-image: url('./coffee-beans.svg');
-            background-size: 35px 35px;
-            height: 35px;
-            width: 35px;
-            margin: 0;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        }
+        @include coffee-beans-logo;
     }
 }
 
@@ -30,16 +34,9 @@
 .nav-menu_position_center {
     .nav-menu__item {
         &_logo {
+            @include coffee-beans-logo;
             &:before {
-                display: inline-block;
-                content: '';
                 background-image: url('./coffee-beans-outline-dark.png');
-                fill: black;
-                background-size: 35px 35px;
-                height: 35px;
-                width: 35px;
-                margin: 0;
-                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             }
         }
     }
